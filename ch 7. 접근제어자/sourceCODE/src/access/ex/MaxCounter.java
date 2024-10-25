@@ -10,7 +10,7 @@ public class MaxCounter {
     }
 
     public void increment() {
-        if (max >= count) { // 초과할 수 없습니다 = max와 같아도 되지만 넘으면 안됨
+        if (max > count) { // 등호 붙이면 안됨 -> max와 count가 같을 때 count값을 1 증가시키기 때문
             count += 1; // count++;
         } else {
             System.out.println("최대값을 초과할 수 없습니다.");
