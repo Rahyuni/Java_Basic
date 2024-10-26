@@ -19,5 +19,12 @@ public class DecoDataMain {
 
         // 직접 참조값 준 경우
         staticCall(data1);
+
+        // 정적 메서드는 같은 클래스 내부에서 정적 메서드만 호출할 수 있다
+        print();
+    }
+
+    static void print() {
+        System.out.println("짠");
     }
 }
