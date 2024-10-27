@@ -1,36 +1,36 @@
 package static2.ex;
 
 public class MathArrayUtils {
-    private static int value;
 
     public static int sum(int[] array) {
+        int num = 0;
         for (int i = 0; i < array.length; i++) {
-            value += array[i];
+            num += array[i];
         }
-        return value;
+        return num;
     }
 
     public static double average(int[] array) {
         int num = 0;
-        value = 0;
+        int returnNum = 0;
         for (int i = 0; i < array.length; i++) {
-            value += array[i];
+            num += array[i];
         }
-        num += value / array.length;
-        return num;
+        returnNum += num / array.length;
+        return returnNum;
     }
 
     public static int min(int[] array) {
-        int num = 0;
-        num += array[0];
+        int min = 0;
+        min += array[0];
         for (int i = 0; i < array.length; i++) {
-            if (num <= array[i]) {
-                return num;
+            if (min <= array[i]) {
+                return min;
             } else {
-                num += array[i];
+                min += array[i];
             }
         }
-        return num;
+        return min;
     }
 
     public static int max(int[] array) {
