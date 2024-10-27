@@ -2,6 +2,10 @@ package static2.ex;
 
 public class MathArrayUtils {
 
+    private MathArrayUtils() {
+        // 인스턴스 생성 막기
+    }
+
     public static int sum(int[] array) {
         int num = 0;
         for (int value : array) {
